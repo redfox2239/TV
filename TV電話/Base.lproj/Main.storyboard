@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jds-9Y-d1C">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kmS-YX-2g8">
+            <objects>
+                <navigationController id="Jds-9Y-d1C" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WSH-TH-7gE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aGN-i1-1Ha" kind="relationship" relationship="rootViewController" id="770-67-zHe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmp-jh-i2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="-184"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="cO0-Cr-Gg3">
+            <objects>
+                <viewController id="aGN-i1-1Ha" customClass="InitialViewController" customModule="TV電話" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIS-Y2-4wl"/>
+                        <viewControllerLayoutGuide type="bottom" id="8On-2W-cVv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4gy-K8-91d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アダ名を入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2M-e2-kFm">
+                                <rect key="frame" x="16" y="112" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RrK-00-YuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O2M-e2-kFm" firstAttribute="trailing" secondItem="4gy-K8-91d" secondAttribute="trailingMargin" id="83f-cI-7bJ"/>
+                            <constraint firstItem="8On-2W-cVv" firstAttribute="top" secondItem="O2M-e2-kFm" secondAttribute="bottom" constant="458" id="Y6H-n0-KI0"/>
+                            <constraint firstItem="O2M-e2-kFm" firstAttribute="leading" secondItem="4gy-K8-91d" secondAttribute="leadingMargin" id="kug-lR-G7j"/>
+                            <constraint firstItem="O2M-e2-kFm" firstAttribute="top" secondItem="TIS-Y2-4wl" secondAttribute="bottom" constant="48" id="rj0-eW-kqG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dIt-eh-NiF">
+                        <barButtonItem key="rightBarButtonItem" title="OK" id="xK6-Ji-60c">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" id="lGj-vP-3id"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nickName" destination="O2M-e2-kFm" id="fvT-j1-06v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rE-Rf-KnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="492"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewController" customModule="TV電話" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +76,55 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-8v-Kvq">
+                                <rect key="frame" x="0.0" y="287" width="600" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="awI-XG-Ibg"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7C-WO-LgC" customClass="SKWVideo">
+                                <rect key="frame" x="0.0" y="64" width="600" height="223"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ors-JC-3dY" customClass="SKWVideo">
+                                <rect key="frame" x="430" y="430" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="GFV-I9-wcJ"/>
+                                    <constraint firstAttribute="width" constant="140" id="q4k-kI-92n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O6K-8v-Kvq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="CjF-Pt-Abf"/>
+                            <constraint firstItem="r7C-WO-LgC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="J1I-wK-2NL"/>
+                            <constraint firstItem="O6K-8v-Kvq" firstAttribute="top" secondItem="r7C-WO-LgC" secondAttribute="bottom" id="Kjs-YD-4u4"/>
+                            <constraint firstItem="O6K-8v-Kvq" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="W0H-Gz-rtL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ors-JC-3dY" secondAttribute="bottom" constant="30" id="XNh-QC-z8m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ors-JC-3dY" secondAttribute="trailing" constant="14" id="eTt-0A-1LO"/>
+                            <constraint firstItem="r7C-WO-LgC" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="64" id="fFw-DW-jfu"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="O6K-8v-Kvq" secondAttribute="bottom" id="mne-e0-wFC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r7C-WO-LgC" secondAttribute="trailing" constant="-16" id="rc8-2V-9Fd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O6K-8v-Kvq" secondAttribute="trailing" constant="-16" id="wp5-S7-ZsF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mne-e0-wFC"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="aIv-gt-qgi">
+                        <barButtonItem key="rightBarButtonItem" title="終了" id="Szg-kW-4cE">
+                            <connections>
+                                <action selector="endSession:" destination="vXZ-lx-hvc" id="eyG-af-BM5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="localVideoView" destination="Ors-JC-3dY" id="clD-tU-LU0"/>
+                        <outlet property="peerTableView" destination="O6K-8v-Kvq" id="yIN-xh-pGK"/>
+                        <outlet property="remoteVideoView" destination="r7C-WO-LgC" id="DQK-mt-thC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

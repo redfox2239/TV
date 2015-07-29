@@ -13,6 +13,20 @@
 		7FB741C21B666A7600C7BFDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB741C11B666A7600C7BFDC /* Images.xcassets */; };
 		7FB741C51B666A7600C7BFDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FB741C31B666A7600C7BFDC /* LaunchScreen.xib */; };
 		7FB741D11B666A7600C7BFDC /* TV__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB741D01B666A7600C7BFDC /* TV__Tests.swift */; };
+		7FB741DC1B666D3B00C7BFDC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741DB1B666D3B00C7BFDC /* AudioToolbox.framework */; };
+		7FB741DE1B666D4300C7BFDC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741DD1B666D4300C7BFDC /* AVFoundation.framework */; };
+		7FB741E01B666D4D00C7BFDC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741DF1B666D4D00C7BFDC /* CoreMedia.framework */; };
+		7FB741E21B666D5600C7BFDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741E11B666D5600C7BFDC /* CoreGraphics.framework */; };
+		7FB741E41B666D6F00C7BFDC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741E31B666D6F00C7BFDC /* GLKit.framework */; };
+		7FB741E61B666D7F00C7BFDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741E51B666D7F00C7BFDC /* Foundation.framework */; };
+		7FB741E81B666D9100C7BFDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741E71B666D9100C7BFDC /* SystemConfiguration.framework */; };
+		7FB741EA1B666DA200C7BFDC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741E91B666DA200C7BFDC /* libc++.dylib */; };
+		7FB741EC1B666DB200C7BFDC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741EB1B666DB200C7BFDC /* libstdc++.6.0.9.dylib */; };
+		7FB741EE1B666DBF00C7BFDC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741ED1B666DBF00C7BFDC /* libsqlite3.dylib */; };
+		7FB741F01B666DCB00C7BFDC /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741EF1B666DCB00C7BFDC /* libcurses.dylib */; };
+		7FB741F21B666DDA00C7BFDC /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741F11B666DDA00C7BFDC /* SkyWay.framework */; };
+		7FB741F81B66702500C7BFDC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB741F71B66702500C7BFDC /* libicucore.dylib */; };
+		7FB741FA1B669D0D00C7BFDC /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB741F91B669D0D00C7BFDC /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,21 @@
 		7FB741CA1B666A7600C7BFDC /* TV電話Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TV電話Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB741CF1B666A7600C7BFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB741D01B666A7600C7BFDC /* TV__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV__Tests.swift; sourceTree = "<group>"; };
+		7FB741DB1B666D3B00C7BFDC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7FB741DD1B666D4300C7BFDC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7FB741DF1B666D4D00C7BFDC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7FB741E11B666D5600C7BFDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FB741E31B666D6F00C7BFDC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7FB741E51B666D7F00C7BFDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FB741E71B666D9100C7BFDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7FB741E91B666DA200C7BFDC /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		7FB741EB1B666DB200C7BFDC /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		7FB741ED1B666DBF00C7BFDC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7FB741EF1B666DCB00C7BFDC /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
+		7FB741F11B666DDA00C7BFDC /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "../../../Downloads/SkyWay-iOS-SDK-0.1.0/SkyWay.framework"; sourceTree = "<group>"; };
+		7FB741F31B666E1600C7BFDC /* TV電話-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TV電話-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FB741F71B66702500C7BFDC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7FB741F91B669D0D00C7BFDC /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB741F81B66702500C7BFDC /* libicucore.dylib in Frameworks */,
+				7FB741F21B666DDA00C7BFDC /* SkyWay.framework in Frameworks */,
+				7FB741F01B666DCB00C7BFDC /* libcurses.dylib in Frameworks */,
+				7FB741EE1B666DBF00C7BFDC /* libsqlite3.dylib in Frameworks */,
+				7FB741EC1B666DB200C7BFDC /* libstdc++.6.0.9.dylib in Frameworks */,
+				7FB741EA1B666DA200C7BFDC /* libc++.dylib in Frameworks */,
+				7FB741E81B666D9100C7BFDC /* SystemConfiguration.framework in Frameworks */,
+				7FB741E61B666D7F00C7BFDC /* Foundation.framework in Frameworks */,
+				7FB741E41B666D6F00C7BFDC /* GLKit.framework in Frameworks */,
+				7FB741E21B666D5600C7BFDC /* CoreGraphics.framework in Frameworks */,
+				7FB741E01B666D4D00C7BFDC /* CoreMedia.framework in Frameworks */,
+				7FB741DE1B666D4300C7BFDC /* AVFoundation.framework in Frameworks */,
+				7FB741DC1B666D3B00C7BFDC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7FB741B71B666A7600C7BFDC /* TV電話 */,
+				7FB741DA1B666D2A00C7BFDC /* Framework */,
 				7FB741CD1B666A7600C7BFDC /* TV電話Tests */,
 				7FB741B61B666A7600C7BFDC /* Products */,
 			);
@@ -83,6 +126,8 @@
 				7FB741C11B666A7600C7BFDC /* Images.xcassets */,
 				7FB741C31B666A7600C7BFDC /* LaunchScreen.xib */,
 				7FB741B81B666A7600C7BFDC /* Supporting Files */,
+				7FB741F31B666E1600C7BFDC /* TV電話-Bridging-Header.h */,
+				7FB741F91B669D0D00C7BFDC /* InitialViewController.swift */,
 			);
 			path = "TV電話";
 			sourceTree = "<group>";
@@ -110,6 +155,27 @@
 				7FB741CF1B666A7600C7BFDC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FB741DA1B666D2A00C7BFDC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7FB741F71B66702500C7BFDC /* libicucore.dylib */,
+				7FB741F11B666DDA00C7BFDC /* SkyWay.framework */,
+				7FB741EF1B666DCB00C7BFDC /* libcurses.dylib */,
+				7FB741ED1B666DBF00C7BFDC /* libsqlite3.dylib */,
+				7FB741EB1B666DB200C7BFDC /* libstdc++.6.0.9.dylib */,
+				7FB741E91B666DA200C7BFDC /* libc++.dylib */,
+				7FB741E71B666D9100C7BFDC /* SystemConfiguration.framework */,
+				7FB741E51B666D7F00C7BFDC /* Foundation.framework */,
+				7FB741E31B666D6F00C7BFDC /* GLKit.framework */,
+				7FB741E11B666D5600C7BFDC /* CoreGraphics.framework */,
+				7FB741DF1B666D4D00C7BFDC /* CoreMedia.framework */,
+				7FB741DD1B666D4300C7BFDC /* AVFoundation.framework */,
+				7FB741DB1B666D3B00C7BFDC /* AudioToolbox.framework */,
+			);
+			name = Framework;
+			path = "TV電話";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +227,7 @@
 				TargetAttributes = {
 					7FB741B41B666A7600C7BFDC = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = U435EYR422;
 					};
 					7FB741C91B666A7600C7BFDC = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB741FA1B669D0D00C7BFDC /* InitialViewController.swift in Sources */,
 				7FB741BD1B666A7600C7BFDC /* ViewController.swift in Sources */,
 				7FB741BB1B666A7600C7BFDC /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -303,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -339,20 +409,41 @@
 		7FB741D51B666A7600C7BFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/rharada/Downloads/SkyWay-iOS-SDK-0.1.0",
+				);
 				INFOPLIST_FILE = "TV電話/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TV電話/TV電話-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7FB741D61B666A7600C7BFDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/rharada/Downloads/SkyWay-iOS-SDK-0.1.0",
+				);
 				INFOPLIST_FILE = "TV電話/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TV電話/TV電話-Bridging-Header.h";
 			};
 			name = Release;
 		};
